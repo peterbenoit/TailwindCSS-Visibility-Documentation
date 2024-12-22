@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Visibility Plugin Test</title>
+        <link href="../dist/output.css" rel="stylesheet" />
+    </head>
+    <body class="p-8 space-y-8">
+        <!-- Default theme values -->
+        <div class="content-auto size-hint-sm border p-4">
+            <h2>Small Size Hint (300px)</h2>
+            <p>Testing default sm value...</p>
+        </div>
+
+        <div class="content-auto size-hint-md border p-4">
+            <h2>Medium Size Hint (500px)</h2>
+            <p>Testing default md value...</p>
+        </div>
+
+        <div class="content-auto size-hint-lg border p-4">
+            <h2>Large Size Hint (800px)</h2>
+            <p>Testing default lg value...</p>
+        </div>
+
+        <!-- Custom theme values -->
+        <div class="content-auto size-hint-xs border p-4">
+            <h2>Extra Small Size Hint (100px)</h2>
+            <p>Testing custom xs value...</p>
+        </div>
+
+        <div class="content-auto size-hint-2xl border p-4">
+            <h2>2XL Size Hint (1000px)</h2>
+            <p>Testing custom 2xl value...</p>
+        </div>
+
+        <div class="content-auto size-hint-custom border p-4">
+            <h2>Custom Size Hint (250px)</h2>
+            <p>Testing custom value...</p>
+        </div>
+
+        <!-- Arbitrary pixel values -->
+        <div class="content-auto size-hint-[500px] border p-4">
+            <h2>Arbitrary 500px</h2>
+            <p>Testing arbitrary pixel value...</p>
+        </div>
+
+        <div class="content-auto size-hint-[75px] border p-4">
+            <h2>Arbitrary 75px</h2>
+            <p>Testing smaller arbitrary value...</p>
+        </div>
+
+        <!-- Relative units -->
+        <div class="content-auto size-hint-[20rem] border p-4">
+            <h2>REM Units</h2>
+            <p>Testing rem units...</p>
+        </div>
+
+        <div class="content-auto size-hint-[15em] border p-4">
+            <h2>EM Units</h2>
+            <p>Testing em units...</p>
+        </div>
+
+        <!-- Viewport units -->
+        <div class="content-auto size-hint-[50vh] border p-4">
+            <h2>Viewport Height</h2>
+            <p>Testing viewport height units...</p>
+        </div>
+
+        <div class="content-auto size-hint-[75vw] border p-4">
+            <h2>Viewport Width</h2>
+            <p>Testing viewport width units...</p>
+        </div>
+
+        <!-- Content visibility variations -->
+        <div class="content-visible border p-4">
+            <h2>Content Visible</h2>
+            <p>Testing visible state...</p>
+        </div>
+
+        <div class="content-hidden border p-4">
+            <h2>Content Hidden</h2>
+            <p>Testing hidden state...</p>
+        </div>
+    </body>
+</html>
