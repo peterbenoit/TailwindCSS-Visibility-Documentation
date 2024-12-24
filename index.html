@@ -536,6 +536,46 @@
             <!-- Size Hints Section -->
             <div x-show="currentSection === 'size-hints'" class="space-y-6">
                 <h2 class="text-3xl font-bold text-slate-900 mb-6">Size Hints</h2>
+
+                <div class="bg-white rounded-lg border border-slate-200 p-6 mb-8">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-4">
+                        Understanding Size Hints
+                    </h3>
+                    <p class="text-slate-600 mb-4">
+                        Size hints tell browsers how much space content will occupy before it's
+                        rendered. This prevents layout shifts and improves performance by
+                        pre-allocating the correct amount of space. When combined with
+                        content-visibility, size hints ensure smooth scrolling experiences even with
+                        complex layouts.
+                    </p>
+
+                    <div class="space-y-4 mt-6">
+                        <h4 class="font-semibold text-slate-800">Default Size Hints:</h4>
+                        <ul class="space-y-3 text-slate-600">
+                            <li class="flex items-start">
+                                <span class="font-mono bg-gray-100 px-2 py-0.5 rounded"
+                                    >`size-hint-sm`</span
+                                >
+                                <span class="ml-3">300px - Ideal for small content blocks</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-mono bg-gray-100 px-2 py-0.5 rounded"
+                                    >`size-hint-md`</span
+                                >
+                                <span class="ml-3"
+                                    >500px - Perfect for medium content sections</span
+                                >
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-mono bg-gray-100 px-2 py-0.5 rounded"
+                                    >`size-hint-lg`</span
+                                >
+                                <span class="ml-3">800px - Best for large content areas</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
                 <div class="grid gap-6">
                     <div
                         class="content-auto size-hint-sm border border-slate-200 rounded-lg p-6 bg-white"
