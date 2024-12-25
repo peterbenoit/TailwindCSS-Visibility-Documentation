@@ -846,9 +846,9 @@
             class="fixed top-0 right-0 h-full w-64 bg-white border-l border-slate-200 p-6 overflow-y-auto"
         >
             <h3 class="font-semibold text-slate-900 mb-4">On This Page</h3>
-            <ul class="space-y-2 text-sm">
+            <ul class="text-sm">
                 <template x-if="currentSection === 'introduction'">
-                    <div>
+                    <div class="space-y-2">
                         <li>
                             <a href="#what" class="text-slate-600 hover:text-slate-900"
                                 >What is it?</a
@@ -867,7 +867,7 @@
                     </div>
                 </template>
                 <template x-if="currentSection === 'installation'">
-                    <div>
+                    <div class="space-y-2">
                         <li>
                             <a href="#npm" class="text-slate-600 hover:text-slate-900"
                                 >NPM Installation</a
@@ -881,7 +881,7 @@
                     </div>
                 </template>
                 <template x-if="currentSection === 'configuration'">
-                    <div>
+                    <div class="space-y-2">
                         <li>
                             <a href="#basic-setup" class="text-slate-600 hover:text-slate-900"
                                 >Basic Setup</a
@@ -895,7 +895,7 @@
                     </div>
                 </template>
                 <template x-if="currentSection === 'size-hints'">
-                    <div>
+                    <div class="space-y-2">
                         <li>
                             <a href="#default-sizes" class="text-slate-600 hover:text-slate-900"
                                 >Default Sizes</a
@@ -907,7 +907,7 @@
                     </div>
                 </template>
                 <template x-if="currentSection === 'visibility-states'">
-                    <div>
+                    <div class="space-y-2">
                         <li>
                             <a href="#states" class="text-slate-600 hover:text-slate-900"
                                 >Visibility States</a
@@ -921,7 +921,7 @@
                     </div>
                 </template>
                 <template x-if="currentSection === 'custom-values'">
-                    <div>
+                    <div class="space-y-2">
                         <li>
                             <a href="#arbitrary" class="text-slate-600 hover:text-slate-900"
                                 >Arbitrary Values</a
@@ -935,7 +935,7 @@
                     </div>
                 </template>
                 <template x-if="currentSection === 'use-cases'">
-                    <div>
+                    <div class="space-y-2">
                         <li>
                             <a href="#long-scrolling" class="text-slate-600 hover:text-slate-900"
                                 >Long Scrolling Pages</a
@@ -954,7 +954,7 @@
                     </div>
                 </template>
                 <template x-if="currentSection === 'browser-support'">
-                    <div>
+                    <div class="space-y-2">
                         <li>
                             <a href="#browsers" class="text-slate-600 hover:text-slate-900"
                                 >Supported Browsers</a
@@ -968,7 +968,7 @@
                     </div>
                 </template>
                 <template x-if="currentSection === 'performance'">
-                    <div>
+                    <div class="space-y-2">
                         <li>
                             <a href="#benefits" class="text-slate-600 hover:text-slate-900"
                                 >Benefits</a
