@@ -514,6 +514,14 @@
 
                 <div class="bg-white rounded-lg border border-slate-200 p-6">
                     <h3 class="text-xl font-semibold text-slate-900 mb-4">Benefits</h3>
+                    <p class="text-slate-600 mb-4">
+                        The TailwindCSS Visibility Plugin leverages modern CSS properties like
+                        <code class="font-mono bg-gray-100 px-2 py-0.5 rounded"
+                            >content-visibility</code
+                        >
+                        and size containment to significantly enhance web performance. Here's how it
+                        works:
+                    </p>
                     <ul class="space-y-4">
                         <li class="flex items-start">
                             <svg
@@ -532,7 +540,17 @@
                             <div>
                                 <h4 class="font-semibold text-slate-900">Reduced Rendering Time</h4>
                                 <p class="text-slate-600">
-                                    Optimizes rendering for off-screen content
+                                    By using
+                                    <code class="font-mono bg-gray-100 px-2 py-0.5 rounded"
+                                        >content-visibility</code
+                                    >, the browser can skip rendering work for off-screen content,
+                                    reducing the time spent on layout, style, and paint operations.
+                                    This leads to faster initial page loads and smoother scrolling.
+                                    <a
+                                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/content-visibility"
+                                        class="text-blue-600 hover:text-blue-800 hover:underline"
+                                        >Learn more</a
+                                    >.
                                 </p>
                             </div>
                         </li>
@@ -555,7 +573,10 @@
                                     Improved Paint Performance
                                 </h4>
                                 <p class="text-slate-600">
-                                    Better paint and layout performance for visible content
+                                    The plugin helps optimize paint performance by ensuring that
+                                    only visible content is painted. This reduces unnecessary paint
+                                    operations, which can be resource-intensive, especially on
+                                    complex pages.
                                 </p>
                             </div>
                         </li>
@@ -578,11 +599,41 @@
                                     Optimized Resource Usage
                                 </h4>
                                 <p class="text-slate-600">
-                                    Better browser resource management and memory usage
+                                    By managing the rendering of off-screen content, the plugin
+                                    allows the browser to allocate resources more efficiently,
+                                    leading to better memory usage and overall performance. This is
+                                    particularly beneficial for devices with limited resources.
                                 </p>
                             </div>
                         </li>
                     </ul>
+                </div>
+
+                <div class="bg-white rounded-lg border border-slate-200 p-6">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-4">Technical Insights</h3>
+                    <p class="text-slate-600">
+                        The
+                        <code class="font-mono bg-gray-100 px-2 py-0.5 rounded"
+                            >content-visibility</code
+                        >
+                        property is a powerful tool for optimizing web performance. It allows the
+                        browser to skip rendering work for elements that are not visible on the
+                        screen, which can drastically reduce the time to first paint and improve
+                        overall responsiveness. This property is supported by most modern browsers,
+                        making it a reliable choice for performance optimization.
+                    </p>
+                    <p class="text-slate-600">
+                        For a deeper understanding of how
+                        <code class="font-mono bg-gray-100 px-2 py-0.5 rounded"
+                            >content-visibility</code
+                        >
+                        works and its impact on performance, check out this
+                        <a
+                            href="https://web.dev/content-visibility/"
+                            class="text-blue-600 hover:text-blue-800 hover:underline"
+                            >detailed guide</a
+                        >.
+                    </p>
                 </div>
             </div>
 
