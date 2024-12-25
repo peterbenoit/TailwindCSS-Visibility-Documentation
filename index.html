@@ -28,7 +28,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
     </head>
     <body class="bg-slate-50" x-data="{ currentSection: 'introduction', visibilityEnabled: false }">
-        <!-- Navigation Sidebar -->
         <nav
             class="fixed top-0 left-0 h-full w-64 bg-white border-r border-slate-200 p-6 overflow-y-auto"
         >
@@ -41,7 +40,6 @@
                 >
             </div>
 
-            <!-- Getting Started Section -->
             <div class="mb-8">
                 <h2 class="text-sm font-semibold text-slate-900 px-3 mb-2">Getting Started</h2>
                 <ul class="space-y-2">
@@ -84,7 +82,6 @@
                 </ul>
             </div>
 
-            <!-- Usage Section -->
             <div class="mb-8">
                 <h2 class="text-sm font-semibold text-slate-900 px-3 mb-2">Usage</h2>
                 <ul class="space-y-2">
@@ -118,7 +115,6 @@
                 </ul>
             </div>
 
-            <!-- Examples & Support Section -->
             <div>
                 <h2 class="text-sm font-semibold text-slate-900 px-3 mb-2">Examples & Support</h2>
                 <ul class="space-y-2">
@@ -144,9 +140,7 @@
             </div>
         </nav>
 
-        <!-- Main Content -->
         <main class="ml-64 mr-64 p-8">
-            <!-- Introduction Section -->
             <div x-show="currentSection === 'introduction'" class="space-y-8">
                 <div>
                     <h2 class="text-3xl font-bold text-slate-900 mb-4">
@@ -255,15 +249,45 @@
                 </div>
             </div>
 
-            <!-- Installation Section -->
             <div x-show="currentSection === 'installation'" class="space-y-6">
                 <h2 class="text-3xl font-bold text-slate-900 mb-6">Installation</h2>
+
+                <p class="text-slate-600">
+                    To use the TailwindCSS Visibility Plugin, you'll need to have Node.js and npm
+                    installed on your system. Node.js is a JavaScript runtime that allows you to run
+                    JavaScript on the server side, and npm is the package manager that comes with
+                    Node.js, which allows you to install and manage packages like TailwindCSS.
+                </p>
+                <p class="text-slate-600">
+                    If you haven't installed Node.js and npm yet, you can download them from the
+                    <a
+                        href="https://nodejs.org/"
+                        class="text-blue-600 hover:text-blue-800 hover:underline"
+                        >official Node.js website</a
+                    >.
+                </p>
+
+                <p class="text-slate-600">
+                    Tailwind CSS is a utility-first CSS framework that provides low-level utility
+                    classes to build custom designs without having to leave your HTML. You can learn
+                    more about Tailwind CSS from the
+                    <a
+                        href="https://tailwindcss.com/"
+                        class="text-blue-600 hover:text-blue-800 hover:underline"
+                        >official Tailwind CSS website</a
+                    >.
+                </p>
 
                 <pre
                     class="language-bash rounded-lg p-4"
                 ><code class="language-bash">npm install tailwindcss-visibility</code></pre>
 
-                <p class="text-slate-600">Add the plugin to your tailwind.config.js:</p>
+                <p class="text-slate-600">
+                    After installing the plugin, you need to add it to your Tailwind CSS
+                    configuration file,
+                    <code class="font-mono bg-gray-100 px-2 py-0.5 rounded">tailwind.config.js</code
+                    >, like this:
+                </p>
                 <pre
                     class="language-javascript rounded-lg p-4"
                 ><code class="language-javascript">module.exports = {
@@ -271,9 +295,14 @@
     require('tailwindcss-visibility')
   ]
 }</code></pre>
+
+                <p class="text-slate-600">
+                    This configuration will enable the visibility utilities provided by the plugin,
+                    allowing you to optimize your website's performance with smart content
+                    visibility management and size hints.
+                </p>
             </div>
 
-            <!-- Configuration Section -->
             <div x-show="currentSection === 'configuration'" class="space-y-8">
                 <h2 class="text-3xl font-bold text-slate-900 mb-6">Configuration</h2>
 
@@ -320,7 +349,6 @@
                 </div>
             </div>
 
-            <!-- Use Cases Section -->
             <div x-show="currentSection === 'use-cases'" class="space-y-8">
                 <h2 class="text-3xl font-bold text-slate-900 mb-6">Use Cases</h2>
 
@@ -368,7 +396,6 @@
                 </div>
             </div>
 
-            <!-- Browser Support Section -->
             <div x-show="currentSection === 'browser-support'" class="space-y-8">
                 <h2 class="text-3xl font-bold text-slate-900 mb-6">Browser Support</h2>
 
@@ -455,7 +482,6 @@
                 </div>
             </div>
 
-            <!-- Performance Impact Section -->
             <div x-show="currentSection === 'performance'" class="space-y-8">
                 <h2 class="text-3xl font-bold text-slate-900 mb-6">Performance Impact</h2>
 
@@ -533,7 +559,6 @@
                 </div>
             </div>
 
-            <!-- Size Hints Section -->
             <div x-show="currentSection === 'size-hints'" class="space-y-6">
                 <h2 class="text-3xl font-bold text-slate-900 mb-6">Size Hints</h2>
 
@@ -598,7 +623,6 @@
                 </div>
             </div>
 
-            <!-- Visibility States Section -->
             <div x-show="currentSection === 'visibility-states'" class="space-y-6">
                 <h2 class="text-3xl font-bold text-slate-900 mb-6">Visibility States</h2>
                 <div class="bg-white rounded-lg border border-slate-200 p-6 mb-8">
@@ -681,7 +705,6 @@
                 </div>
             </div>
 
-            <!-- Custom Values Section -->
             <div x-show="currentSection === 'custom-values'" class="space-y-6">
                 <h2 class="text-3xl font-bold text-slate-900 mb-6">Custom Values</h2>
                 <div class="bg-white rounded-lg border border-slate-200 p-6 mb-8">
@@ -728,7 +751,6 @@
                 </div>
             </div>
 
-            <!-- Examples Section -->
             <div x-show="currentSection === 'examples'" class="space-y-6">
                 <h2 class="text-3xl font-bold text-slate-900 mb-6">Responsive</h2>
                 <div class="grid gap-6">
@@ -742,7 +764,6 @@
             </div>
         </main>
 
-        <!-- Right Sidebar -->
         <aside
             class="fixed top-0 right-0 h-full w-64 bg-white border-l border-slate-200 p-6 overflow-y-auto"
         >
