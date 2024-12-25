@@ -554,13 +554,13 @@
                         <ul class="space-y-3 text-slate-600">
                             <li class="flex items-start">
                                 <span class="font-mono bg-gray-100 px-2 py-0.5 rounded"
-                                    >`size-hint-sm`</span
+                                    >size-hint-sm</span
                                 >
                                 <span class="ml-3">300px - Ideal for small content blocks</span>
                             </li>
                             <li class="flex items-start">
                                 <span class="font-mono bg-gray-100 px-2 py-0.5 rounded"
-                                    >`size-hint-md`</span
+                                    >size-hint-md</span
                                 >
                                 <span class="ml-3"
                                     >500px - Perfect for medium content sections</span
@@ -568,7 +568,7 @@
                             </li>
                             <li class="flex items-start">
                                 <span class="font-mono bg-gray-100 px-2 py-0.5 rounded"
-                                    >`size-hint-lg`</span
+                                    >size-hint-lg</span
                                 >
                                 <span class="ml-3">800px - Best for large content areas</span>
                             </li>
@@ -684,6 +684,34 @@
             <!-- Custom Values Section -->
             <div x-show="currentSection === 'custom-values'" class="space-y-6">
                 <h2 class="text-3xl font-bold text-slate-900 mb-6">Custom Values</h2>
+                <div class="bg-white rounded-lg border border-slate-200 p-6 mb-8">
+                    <h3 class="text-xl font-semibold text-slate-900 mb-4">
+                        Understanding Custom Values
+                    </h3>
+                    <p class="text-slate-600 mb-4">
+                        Custom values allow you to define specific size hints tailored to your
+                        design needs. These values ensure that your layout remains consistent and
+                        visually appealing across different sections of your application.
+                    </p>
+
+                    <div class="space-y-4 mt-6">
+                        <h4 class="font-semibold text-slate-800">Examples of Custom Values:</h4>
+                        <ul class="space-y-3 text-slate-600">
+                            <li class="flex items-start">
+                                <span class="font-mono bg-gray-100 px-2 py-0.5 rounded"
+                                    >size-hint-[75px]</span
+                                >
+                                <span class="ml-3">Perfect for small custom elements</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-mono bg-gray-100 px-2 py-0.5 rounded"
+                                    >size-hint-[20rem]</span
+                                >
+                                <span class="ml-3">Ideal for medium-sized components</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="grid gap-6">
                     <div
                         class="content-auto size-hint-[75px] border border-slate-200 rounded-lg p-6 bg-white"
@@ -714,7 +742,6 @@
             </div>
         </main>
 
-        <!-- Right Sidebar -->
         <!-- Right Sidebar -->
         <aside
             class="fixed top-0 right-0 h-full w-64 bg-white border-l border-slate-200 p-6 overflow-y-auto"
