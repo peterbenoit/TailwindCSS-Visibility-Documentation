@@ -306,11 +306,28 @@
             <div x-show="currentSection === 'configuration'" class="space-y-8">
                 <h2 class="text-3xl font-bold text-slate-900 mb-6">Configuration</h2>
 
+                <p class="text-slate-600">
+                    Configuring the TailwindCSS Visibility Plugin involves setting up your Tailwind
+                    CSS configuration file,
+                    <code class="font-mono bg-gray-100 px-2 py-0.5 rounded">tailwind.config.js</code
+                    >. This file is where you define your project's design system, including custom
+                    themes, plugins, and other settings.
+                </p>
+
+                <p class="text-slate-600">
+                    The configuration file allows you to extend Tailwind's default settings to
+                    better suit your project's needs. By configuring the plugin, you can define
+                    custom size hints and visibility states that help optimize the rendering
+                    performance of your web application.
+                </p>
+
                 <div class="space-y-6">
                     <div class="bg-white rounded-lg border border-slate-200 p-6">
                         <h3 class="text-xl font-semibold text-slate-900 mb-4">Basic Setup</h3>
                         <p class="text-slate-600 mb-4">
-                            Configure default size hints in your tailwind.config.js:
+                            In the basic setup, you can configure default size hints that
+                            pre-allocate space for content, preventing layout shifts and improving
+                            performance. Here's an example configuration:
                         </p>
                         <pre
                             class="language-javascript rounded-lg p-4"
@@ -323,13 +340,17 @@
             lg: '800px',
         },
     },
-};
-</code></pre>
+};</code></pre>
                     </div>
 
                     <div class="bg-white rounded-lg border border-slate-200 p-6">
                         <h3 class="text-xl font-semibold text-slate-900 mb-4">Extended Setup</h3>
-                        <p class="text-slate-600 mb-4">Add custom size hints using theme.extend:</p>
+                        <p class="text-slate-600 mb-4">
+                            For more advanced configurations, you can extend the default theme with
+                            custom size hints. This allows you to tailor the size hints to specific
+                            design requirements of your application. Here's how you can extend the
+                            theme:
+                        </p>
                         <pre
                             class="language-javascript rounded-lg p-4"
                         ><code class="language-javascript">module.exports = {
@@ -347,6 +368,12 @@
 };</code></pre>
                     </div>
                 </div>
+
+                <p class="text-slate-600">
+                    Configuring the plugin in this way ensures that your application can efficiently
+                    manage content visibility and size allocation, leading to improved performance
+                    and a smoother user experience.
+                </p>
             </div>
 
             <div x-show="currentSection === 'use-cases'" class="space-y-8">
